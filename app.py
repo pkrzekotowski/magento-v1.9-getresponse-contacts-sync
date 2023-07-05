@@ -66,8 +66,8 @@ def job():
     # Send the contacts to GetResponse
     send_to_getresponse(contact_list)
 
-# Schedule the job to run once an hour
-schedule.every(1).hours.do(job)
+# Schedule the job to run every 20 minutes
+schedule.every(20).minutes.do(job)
 
 # Keep the script running
 while True:
